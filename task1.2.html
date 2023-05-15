@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    html{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .container{
+        /* border: solid; */
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-areas: 
+        'item0 item0 item0 item0'
+        'item1 item1 item2 item3'
+        'item4 item5 item5 item3';
+        /* margin: 60px; */
+
+        height: 100%;
+    }
+    
+    .item{
+        /* border: solid; */
+        margin: 10px;
+        padding: 40px;
+        font-size: 1.2rem;
+
+        
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-radius: 12px;
+        text-align: justify;
+    }
+    
+    #item0{
+        grid-area: item0;
+        padding-top: 10px;
+        font-size: 3rem;
+        color: black;
+    }
+    #item1{
+        grid-area: item1;
+        color: rgb(255, 255, 255);
+        background-image: url("https://media.istockphoto.com/id/485563689/photo/taj-mahal-at-twilight-agra-india.jpg?s=612x612&w=0&k=20&c=TUVSLNoJB0qx5wQRxr470DtMFumHzhXRGpzyJzxG7r0=");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        
+    }
+    
+    #item2{
+        grid-area: item2;
+        color: rgb(255, 255, 255);
+        background-image: url("https://media.istockphoto.com/id/898467608/photo/the-india-gate-in-delhi.jpg?s=612x612&w=0&k=20&c=gXUaUcAJf7TD8VZ1UvBfNGU0SNNzqg-xuIx_eXgL1OM=");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+    #item3{
+        grid-area: item3;
+        color: rgb(255, 255, 255);
+        background-image: url("https://t4.ftcdn.net/jpg/03/74/75/79/360_F_374757962_GV6Qd2skyB727734zpEcGup6S8gtk4hr.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        /* border: 1px solid black; */
+        font-size: 1.2rem;
+    }
+    #item4{
+        grid-area: item4;
+        color: rgb(255, 255, 255);
+        background-image: url("https://assets.telegraphindia.com/telegraph/2022/Sep/1663539331_new-project-2022-09-19t034158-861.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        /* border: 1px solid black; */
+    }
+    #item5{
+        grid-area: item5;
+        color: rgb(255, 255, 255);
+        background-image: url("https://www.iitkgpfoundation.org/images/vault/175.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        color: rgb(255, 255, 255);
+    }
+    
+    @media screen and (max-width:700px) {
+        .container{
+            grid-template-areas: 
+            'item0 item0 item0 '
+            'item1 item1 item1 '
+            'item2 item2 item2 '
+            'item3 item3 item3 '
+            'item5 item5 item5 '
+            'item4 item4 item4 ';
+        }
+        .item{
+            font-size: 1rem;
+        }
+        #item3{
+            font-size: 0.8rem;
+        }
+        #item0{
+         
+            font-size: 1.2rem;
+        }
+    }
+    @media screen and (min-width:701px) and (max-width:1200px) {
+        .container{
+            grid-template-areas: 
+            'item0 item0 item0 item0 '
+            'item1 item1 item2 item2 '
+            'item3 item3 item3 item3'
+            'item5 item5 item4 item4 ';
+            
+        }
+        .item{
+            font-size: 1rem;
+        }
+        #item0{
+            font-size: 2rem;
+        }
+        
+    }</style>
+</head>
+<body>
+    <div class="container">
+        <div class="nametop" id = "item0">
+            <h1 align = "center">Places To Visit</h1>
+        </div>
+        <div class="item" id="item1">
+            <h1 align = 'center'>Taj Mahal</h1><br>
+            <p>Taj Mahal is a magnificent mausoleum located in Agra, India, and is one of the most popular tourist destinations in the world. Built by Mughal emperor Shah Jahan in memory of his beloved wife Mumtaz Mahal, it is considered a masterpiece of Mughal architecture and is recognized as a UNESCO World Heritage Site. The white marble structure is adorned with intricate carvings and precious gemstones, and its symmetrical design and breathtaking beauty have made it an iconic symbol of love and devotion. The Taj Mahal is surrounded by lush gardens and reflective pools, and visitors can explore its interior chambers and learn about its fascinating history. With its stunning beauty and rich cultural significance, the Taj Mahal is truly a wonder of the world.
+                
+            </p></div>
+        <div class="item" id="item2">
+            <h1 align = 'center'>India Gate</h1><br>
+            <p>The Red Fort, also known as Lal Qila, is a historic fort located in Delhi, India. It was built by Mughal Emperor Shah Jahan in the 17th century and served as the residence of the Mughal emperors for nearly 200 years. The fort is made of red sandstone and is an excellent example of Mughal architecture, featuring intricate carvings and decorations.The fort has two main entrances, the Lahori Gate and the Delhi Gate, and is surrounded by a moat. Within the fort, there are several buildings and structures, including the Diwan-i-Aam, or Hall of Public Audience, and the Diwan-i-Khas, or Hall of Private Audience, as well as a mosque and several gardens.
+            The Red Fort is now a UNESCO World Heritage Site and is a popular tourist attraction in Delhi.</p></div>
+
+
+        <div class="item" id="item3">
+            <h1 align = "center">Statue Of Unity</h1><br>
+            <p>The Statue of Unity is a colossal statue of India's first deputy prime minister, Sardar Vallabhbhai Patel, located in the state of Gujarat, India. It was inaugurated on October 31, 2018, by Indian Prime Minister Narendra Modi, on the occasion of Sardar Patel's 143rd birth anniversary. The statue is located on the Sadhu Bet Island on the Narmada River, near the Sardar Sarovar Dam.
+
+                The Statue of Unity is the world's tallest statue, standing at a height of 182 meters (597 feet). It is made of bronze and was designed by Indian sculptor Ram V. Sutar. The statue was built by Larsen & Toubro, one of India's largest engineering and construction companies, at a cost of around 2.9 billion Indian Rupees (approximately $400 million USD). The statue took around 4 years to complete and involved the efforts of thousands of workers.
+                
+                The statue is a tribute to Sardar Patel, who played a crucial role in India's struggle for independence from British rule. He was instrumental in the integration of over 500 princely states into the Indian Union after independence, earning him the title of "Iron Man of India." The statue is a symbol of national unity and represents the values of courage, determination, and unity that Sardar Patel embodied.
+                
+                The statue is surrounded by a sprawling complex that includes a museum, a research center, a memorial garden, and a viewing gallery. The museum and research center showcase the life and achievements of Sardar Patel, as well as the history and culture of the region. The memorial garden features a variety of plants and trees, as well as a riverfront promenade that offers stunning views of the statue and the surrounding landscape.
+                
+                The viewing gallery is located at a height of 153 meters (502 feet) and offers panoramic views of the surrounding area. Visitors can access the gallery by taking an elevator that runs through the statue's core. The gallery can accommodate up to 200 visitors at a time and is equipped with telescopes and binoculars for a closer look at the statue and the surrounding landscape.
+                
+                The statue has become a major tourist attraction in India, drawing visitors from across the country and around the world. The site has also generated controversy, with some critics questioning the cost of the project and its relevance in the face of pressing social and economic challenges facing India.
+            </p></div>
+
+                
+        <div class="item" id="item4">
+            <h1 align = 'center'>Howrah Bridge</h1><br>
+            <p>Howrah Bridge is a magnificent cantilever bridge located in Kolkata, India, spanning over the Hooghly River. Completed in 1943, it is considered a landmark of Kolkata and is one of the busiest bridges in the world, serving as a crucial connection point for commuters and transportation vehicles. The bridge is made entirely of steel and has a length of approximately 705 meters, with a width of 71 feet. Its design is unique, as it has no nuts or bolts, but rather was built using a process called riveting. The bridge is also known for its vibrant night lighting, which adds to its grandeur. Howrah Bridge has played a significant role in the development of Kolkata and is a testament to the engineering marvels of the past.</p></div>
+
+
+        <div class="item" id="item5">
+            <h1 align = "center">IIT Kharagpur</h1><br>
+            <p>Indian Institute of Technology Kharagpur (IIT KGP) is one of the premier engineering institutions in India, established in 1951. It is located in the city of Kharagpur in West Bengal, spread over 2100 acres of land. IIT KGP offers undergraduate, postgraduate, and doctoral programs in various disciplines such as engineering, science, humanities, and management.
+
+                The campus of IIT KGP is known for its beautiful architecture and greenery, and it has world-class facilities for students such as libraries, laboratories, sports facilities, and student activity centers. The institute has a strong research culture and has collaborations with leading institutions and industries around the world.
+                
+                IIT KGP is known for its alumni who have excelled in various fields, including academia, research, entrepreneurship, and public service. The institute also has a strong emphasis on social outreach programs, and initiatives like the Rural Technology Action Group (RuTAG) and the National Digital Library of India (NDL) have impacted the lives of many people across the country.
+        </p></div>
+    </div>
+</body>
+</html>
